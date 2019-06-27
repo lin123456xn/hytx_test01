@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul,body{
+            margin: 0;
+            padding: 0;
+        }
+        .products{
+            height: 200px;
+            background-color: pink;
+
+        }
+        div.left{
+            width: 200px;
+            height: 200px;
+            float:left;
+            background-color: blue;
+        }
+        .right{
+           margin-left: 220px;
+           height: 200px;
+            background-color: violet;
+            height: 200;
+        }
+        .products::after {
+      content: "";
+      display:block;
+      clear: both;
+      background-color: yellow;
+       }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="products"> 
+            <div class="left"></div>
+        <div class="right"></div>
+       
+    </div>
+</body>
+</html>
